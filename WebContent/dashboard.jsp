@@ -40,10 +40,10 @@
 	
 	</head>
 
-	<body>
+	<body class="bg-light">
 	
 		<!-- menu  -->
-		<nav class="navbar navbar-expand-md navbar-light">
+		<nav class="navbar navbar-expand-md navbar-light bg-info">
 			
 			<div class="text-dark p-2">
 				<small id="userName" name="userName">

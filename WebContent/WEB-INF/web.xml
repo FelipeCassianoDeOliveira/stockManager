@@ -9,4 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- check erro -->
+  <error-page>
+  	<exception-type>
+  		br.com.login.exception.InvalidUserException
+  	</exception-type>
+  	<location>
+  		/userErro.jsp
+  	</location>
+  </error-page>
+  
 </web-app>

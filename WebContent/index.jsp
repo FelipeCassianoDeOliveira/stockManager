@@ -4,7 +4,6 @@
 <html>
 	<head>
 	
-		<meta charset="ISO-8859-1">
 		<title>Login</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +46,7 @@
 			</div><!-- end title -->
 				
 			<!-- form login  -->		
-			<form action="login" method="post" class="form-login">
+			<form action="login" name="formLogin" method="post" class="form-login">
 				
 				<!-- user login  -->
 				<div class="input-group mb-3">
@@ -57,7 +56,7 @@
 					</div>
 					<input type="text" class="form-control" 
 						placeholder="seu login"
-							 id="userLogin" name="userLogin">
+							 id="userLogin" name="userLogin" required="required">
 				</div><!-- end user login  -->
 				
 				<!-- user password  -->
@@ -68,15 +67,36 @@
 					</div>
 					<input type="password" class="form-control" 
 						placeholder="sua senha"
-							 id="userPass" name="userPass">
+							 id="userPass" name="userPass" required="required">
 				</div><!-- end user password  -->
 				
 				<button type="submit" 
-					class="btn btn-block btn-lg text-white" style="background-color: #344955;">entrar</button>
+					class="btn btn-block btn-lg text-white" 
+						style="background-color: #344955;" onclick="validarLogin()">
+						entrar</button>
 				
 			</form>
 			
 		</div>
+		
+		<!-- javascript -->
+		<script type="text/javascript">
+			function validarLogin(){
+				
+				
+				if(document.formLogin.userLogin.value==""){
+					alert("preechar todos os campos!");
+					return false;
+				};
+				
+				if(document.formLogin.userPass.value==""){
+					alert("preechar todos os campos!");
+					return false;
+				};
+				
+				document.formLogin.submit();
+			}
+		</script>
 	</body>
 </html>
 			

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.login.exception.InvalidUserException;
+
 /**
  * Servlet implementation class LoginController
  */
@@ -46,15 +48,15 @@ public class LoginController extends HttpServlet {
 		rd.forward(req, resp);
 		
 	}
-
+	
 	private void ValidaDadosRecebidos(HttpServletRequest request) throws ServletException{
 		// TODO Auto-generated method stub
 		
 			String userLogin = request.getParameter("userLogin");
 			String userPass = request.getParameter("userPass");
-			
-			if(userLogin.trim().equals("") || userPass.trim().equals("")) {
-				throw new ServletException("Preecha os campos");
+		
+			if(!userLogin.trim().equals("felipe") || !userPass.trim().equals("123")) {
+				throw new InvalidUserException("Login ou Senha");
 			}
 		
 	}
