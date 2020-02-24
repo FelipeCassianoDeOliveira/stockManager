@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family: fantasy;
+	background-color: #121212;
+}
+
+.card{
+	background-color: #F9AA33;
+	margin-top: 100px;
+}
+
+.card .form-login{
+	padding-top: 20px;
+}

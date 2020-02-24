@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family: fantasy;
+	background-color: #121212;
+}
+
+.navbar{
+	background-color: #F48226;
+}
