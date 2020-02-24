@@ -30,7 +30,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<!-- custom style css -->
-		<link rel="stylesheet" href="loginStyle.css">
+		<link rel="stylesheet" href="styleIndex.css">
 		
 		<style type="text/css">
 	
@@ -57,7 +57,7 @@
 					</div>
 					<input type="text" class="form-control" 
 						placeholder="seu login"
-							 id="userLogin" name="userLogin" required="required">
+							 id="userLogin" name="userLogin">
 				</div><!-- end user login  -->
 				
 				<!-- user password  -->
@@ -68,7 +68,7 @@
 					</div>
 					<input type="password" class="form-control" 
 						placeholder="sua senha"
-							 id="userPass" name="userPass" required="required">
+							 id="userPass" name="userPass">
 				</div><!-- end user password  -->
 				
 				<button type="submit" 

@@ -34,18 +34,7 @@
 		
 		<style type="text/css">
 			
-			.navbar .nav-brand{
-			 	padding-right: 20px;
-			 	padding-left: 5px;
-			 }
-			 .navbar .nav-brand i{ 
-			 	font-size: 16pt;
-			 	padding-top: 2px;	
-			 }
-			 .navbar .nav-brand small{padding-top: 5px;}
-			
-			.navbar .navbar-nav{ padding-left: 120px;}
-			
+		
 			
 		</style>
 	
@@ -54,18 +43,15 @@
 	<body>
 	
 		<!-- menu  -->
-		<nav class="navbar navbar-expand-sm navbar-dark">
-			<div class="nav-brand">
-				<div class="row">
-					<div class="col-sm-3 ">
-						<i class="fas fa-user"></i>
-					</div>
-					<div class="col-sm-9">
-						<small id="userName" name="userName"><b>user name</b></small>
-					</div>
-				</div>
-			</div>
+		<nav class="navbar navbar-expand-md navbar-light">
 			
+			<div class="text-dark p-2">
+				<small id="userName" name="userName">
+					<b>UserName</b>
+				</small>
+			</div>
+		
+		
 			<!-- search -->
 			<form class="form-inline" >	
 				<div class="input-group">
@@ -77,41 +63,152 @@
 				</div><!-- end search -->
 			</form>
 			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#collapsIbleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
 			<!-- lista menu -->
-			<ul class="navbar-nav">
-			
-				<li class="nav-item active">
-					<a class="nav-link" href="#">
-						<i class="fa fa-dashboard"></i>
-							Dashboard
-					</a>
-				</li>
-				
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" 
-						data-toggle="dropdown">
-						<i class="fas fa-cog"></i>
-							configuração
-					</a>
-				</li>
-				
-				<li class="nav-item">
+			<div class="collapse navbar-collapse" id="collapsIbleNavbar">
+				<ul class="navbar-nav">
 					
-				</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fa fa-dashboard"></i>
+								Dashboard
+						</a>
+					</li>
 				
-				<li class="nav-item">
 					
-				</li>
-				<li class="nav-item">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-clipboard-list"></i>
+								cadastrar produto
+						</a>
+					</li>
 					
-				</li>
-				<li class="nav-item">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<img src="icon-inventario.png">
+								Inventário
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-warehouse"></i>
+								Estoque
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-chart-line"></i>
+								Relatório
+						</a>
+					</li>
+						
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" 
+							data-toggle="dropdown">
+							<i class="fas fa-cog"></i>
+								configuração
+						</a>
+						<!-- dropdown -->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Tema</a>
+							<a class="dropdown-item" href="#">fonte</a>
+							<a class="dropdown-item" href="#">painel inicial</a>
+						</div><!-- end dropdown -->
+					</li>
 					
-				</li>
-				
-			</ul><!-- end lista menu -->
-			
+				</ul><!-- end lista menu -->
+			</div>
 		</nav><!-- end menu -->
+		
+		<!-- container  -->
+		<div class="container">
+		
+			<!-- card columns -->
+			<div class="row">
+			
+				<!-- card earnings monthly -->
+				<div class="col-sm-3">
+					<div class="card">
+						<div class="card-body" style="height: 105px;">
+		                  	<div class="row no-gutters align-items-center">
+			                    <div class="col mr-2">
+			                    <div class="text-xs font-weight-bold  text-uppercase mb-1"
+			                    	style="color: #F9AA33;">Ganhos (Mensais)</div>
+			                     <div class="h5 mb-0 font-weight-bold text-gray-800" >R$ 70,50</div>
+			                    </div>
+			                    <div class="col-auto" >
+			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
+			                    </div>
+		                  	</div>
+						</div>
+					</div>
+				</div><!-- end card earnings monthly -->
+				
+				<!-- card earnings annual -->
+				<div class="col-sm-3">
+					<div class="card">
+						<div class="card-body border-success" style="height: 105px;">
+		                  	<div class="row no-gutters align-items-center" >
+			                    <div class="col mr-2" >
+			                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1" >Ganhos (Anuais)</div>
+			                     <div class="h5 mb-0 font-weight-bold text-gray-800" >R$ 846,00</div>
+			                    </div>
+			                    <div class="col-auto" >
+			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
+			                    </div>
+		                  	</div>
+						</div>
+					</div>
+				</div><!-- end card earnings annual  -->
+				
+				<!-- tasks -->
+				<div class="col-sm-3">
+					<div class="card" style="height: 105px;">
+						<div class="card-body border-danger">
+		                  	<div class="row no-gutters align-items-center">
+			                    <div class="col mr-2">
+				                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tarefas</div>
+				                    <div class=" font-weight-bold text-success">50%
+				                     	<div class="progress" style="width:120px;">
+				                     		<div class="progress-bar bg-info" style="width:50%">50%</div>
+				                     	</div>
+				                    </div>
+			                    </div>
+			                    <div class="col-auto">
+			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
+			                    </div>
+		                  	</div>
+						</div>
+					</div>
+				</div><!-- end tasks -->
+				
+				<!-- pending requests  -->
+				<div class="col-sm-3">
+					<div class="card "  style="height: 105px;">
+						<div class="card-body  border-info">
+		                  	<div class="row no-gutters align-items-center">
+			                    <div class="col mr-2">
+				                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" >Pedidos</div>
+				                    <div class="h5 mb-0 font-weight-bold text-success">
+				                     18
+				                    </div>
+			                    </div>
+			                    <div class="col-auto">
+			                     	<i class="fas fa-comments fa-2x text-secondary"></i>
+			                    </div>
+		                  	</div>
+						</div>
+					</div>
+				</div><!-- end pendings requests -->
+				
+			</div><!-- end card columns -->
+		
+		</div><!-- end container -->
+		
 		
 	</body>
 </html>	

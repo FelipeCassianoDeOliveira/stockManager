@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet("/Login")
+@WebServlet("/login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -38,12 +38,24 @@ public class LoginController extends HttpServlet {
 	}
 
 	private void
-		processRequest(HttpServletRequest request, HttpServletResponse response) {
+		processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		ValidaDados.Recebidos(request);
-		RequestDispatcher rd = request.getRequestDispatcher("logado.jsp");
+		ValidaDadosRecebidos(req);
+		RequestDispatcher rd = req.getRequestDispatcher("dashboard.jsp");
+		rd.forward(req, resp);
 		
+	}
+
+	private void ValidaDadosRecebidos(HttpServletRequest request) throws ServletException{
+		// TODO Auto-generated method stub
+		
+			String userLogin = request.getParameter("userLogin");
+			String userPass = request.getParameter("userPass");
+			
+			if(userLogin.trim().equals("") || userPass.trim().equals("")) {
+				throw new ServletException("Preecha os campos");
+			}
 		
 	}
 

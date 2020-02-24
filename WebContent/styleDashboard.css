@@ -2,9 +2,38 @@
 
 body{
 	font-family: fantasy;
-	background-color: #121212;
+	/*background-color: #121212;*/
 }
 
+
+/* menu  **/
 .navbar{
 	background-color: #F48226;
+}
+
+.navbar .nav-brand{			 	
+	padding-right: 20px;
+ 	padding-left: 5px;
+}
+.navbar .nav-brand i{ 
+ 	font-size: 16pt;
+ 	padding-top: 2px;	
+}
+.navbar .nav-brand small{padding-top: 5px;}		
+.navbar .navbar-nav{ padding-left: 120px;}
+/* end menu **/
+
+
+/** container **/
+.container{
+	margin-top: 50px;
+}
+
+.container .card .card-body{
+	border-left-style: solid;
+	border-bottom-width: 15px;
+	border-color: #F9AA33;
+}
+.container .card .card-body i{
+	opacity: .8;
 }
