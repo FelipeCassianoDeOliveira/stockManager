@@ -56,7 +56,7 @@
 					</div>
 					<input type="text" class="form-control" 
 						placeholder="seu login"
-							 id="userLogin" name="userLogin" required="required">
+							 id="userLogin" name="userLogin" required="required" value="felipe">
 				</div><!-- end user login  -->
 				
 				<!-- user password  -->
@@ -67,7 +67,7 @@
 					</div>
 					<input type="password" class="form-control" 
 						placeholder="sua senha"
-							 id="userPass" name="userPass" required="required">
+							 id="userPass" name="userPass" required="required" value="123">
 				</div><!-- end user password  -->
 				
 				<button type="submit" 

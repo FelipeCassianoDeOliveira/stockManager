@@ -5,7 +5,7 @@
 <head>
 	
 		<meta charset="ISO-8859-1">
-		<title>Dashboad</title>
+		<title>Cadastrar produto</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -78,7 +78,7 @@
 			<div class="collapse navbar-collapse" id="collapsIbleNavbar">
 				<ul class="navbar-nav">
 					
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<a class="nav-link" href="dashboard.jsp">
 							<i class="fa fa-dashboard"></i>
 								Dashboard
@@ -86,8 +86,8 @@
 					</li>
 				
 					
-					<li class="nav-item">
-						<a class="nav-link" href="register_product.jsp">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
 							<i class="fas fa-clipboard-list"></i>
 								cadastrar produto
 						</a>
@@ -132,86 +132,6 @@
 		
 		<!-- container  -->
 		<div class="container">
-		
-			<!-- card columns -->
-			<div class="row">
-			
-				<!-- card earnings monthly -->
-				<div class="col-sm-3">
-					<div class="card">
-						<div class="card-body" style="height: 105px;">
-		                  	<div class="row no-gutters align-items-center">
-			                    <div class="col mr-2">
-			                    <div class="text-xs font-weight-bold  text-uppercase mb-1"
-			                    	style="color: #F9AA33;">Ganhos (Mensais)</div>
-			                     <div class="h5 mb-0 font-weight-bold text-gray-800" >R$ 0</div>
-			                    </div>
-			                    <div class="col-auto" >
-			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
-			                    </div>
-		                  	</div>
-						</div>
-					</div>
-				</div><!-- end card earnings monthly -->
-				
-				<!-- card earnings annual -->
-				<div class="col-sm-3">
-					<div class="card">
-						<div class="card-body border-success" style="height: 105px;">
-		                  	<div class="row no-gutters align-items-center" >
-			                    <div class="col mr-2" >
-			                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1" >Ganhos (Anuais)</div>
-			                     <div class="h5 mb-0 font-weight-bold text-gray-800" >R$ 0</div>
-			                    </div>
-			                    <div class="col-auto" >
-			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
-			                    </div>
-		                  	</div>
-						</div>
-					</div>
-				</div><!-- end card earnings annual  -->
-				
-				<!-- tasks -->
-				<div class="col-sm-3">
-					<div class="card" style="height: 105px;">
-						<div class="card-body border-danger">
-		                  	<div class="row no-gutters align-items-center">
-			                    <div class="col mr-2">
-				                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Tarefas</div>
-				                    <div class=" font-weight-bold text-success">0%
-				                     	<div class="progress" style="width:120px;">
-				                     		<div class="progress-bar bg-info" style="width:50%">0%</div>
-				                     	</div>
-				                    </div>
-			                    </div>
-			                    <div class="col-auto">
-			                     	<i class="fas fa-calendar fa-2x text-secondary"></i>
-			                    </div>
-		                  	</div>
-						</div>
-					</div>
-				</div><!-- end tasks -->
-				
-				<!-- pending requests  -->
-				<div class="col-sm-3">
-					<div class="card "  style="height: 105px;">
-						<div class="card-body  border-info">
-		                  	<div class="row no-gutters align-items-center">
-			                    <div class="col mr-2">
-				                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" >Pedidos</div>
-				                    <div class="h5 mb-0 font-weight-bold text-success">
-				                     0
-				                    </div>
-			                    </div>
-			                    <div class="col-auto">
-			                     	<i class="fas fa-comments fa-2x text-secondary"></i>
-			                    </div>
-		                  	</div>
-						</div>
-					</div>
-				</div><!-- end pendings requests -->
-				
-			</div><!-- end card columns -->
 		
 		</div><!-- end container -->
 		
