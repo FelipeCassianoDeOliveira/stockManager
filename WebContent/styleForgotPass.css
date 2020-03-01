@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+
+.container-main{ 
+    margin-top: 80px;
+    
+}
+.container-main .card{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container-main .card .form-sign-up{
+    margin-top: 30px;
+}
+.container-main .card .header{
+    margin-top: -1px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 3px 3px 0px 0px;;
+}
+
+.container-main .card form .form-row{
+    padding-top: 20px;
+}
+
+body footer{
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1360px){
+    body footer{
+        margin-top: 100px;
+    }
+    
+}

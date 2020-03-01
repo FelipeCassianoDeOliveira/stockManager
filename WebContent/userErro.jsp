@@ -36,14 +36,13 @@
 	</head>
 	<!-- body  -->
 	<body>
-	
+		
 		<div class="jumbotron bg-danger text-center" style="border-radius:0px;;">
 		
 			<h3 class="text-white"><b>Olá, temos um problema,</b></h3>
 			<h4 class="text-white"><b>
 				<%=exception.getMessage() %> 
 			</b></h4>
-			<h5 class="text-white"><b>estão incorretos</b></h5>
 			<span class="text-white" style="font-size:26pt;"><i class="fas fa-angle-down"></i></span>
 		</div>
 		

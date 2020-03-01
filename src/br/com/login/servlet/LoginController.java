@@ -46,25 +46,26 @@ public class LoginController extends HttpServlet {
 		processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		ValidaDadosRecebidos(req, null);
+		ValidaDadosRecebidos(req);
 		RequestDispatcher rd = req.getRequestDispatcher("dashboard.jsp");
 		rd.forward(req, resp);
 		
 	}
 	
-	private void ValidaDadosRecebidos(HttpServletRequest req, String UserName) throws ServletException{
+	private void ValidaDadosRecebidos(HttpServletRequest req) throws ServletException{
 		// TODO Auto-generated method stub
 		
 			String userLogin = req.getParameter("userLogin");
 			String userPass = req.getParameter("userPass");
-			UserName = userLogin;
+			
+			
 			if(!userLogin.trim().equals("felipe") || !userPass.trim().equals("123")) { 
-				throw new InvalidUserException("Login ou Senha");
+				throw new InvalidUserException("Login ou senha estão incorretas");
 			
 			}
 		
 			HttpSession session = req.getSession();
-			session.setAttribute("userAut", UserName);
+			session.setAttribute("userAut", userLogin);
 			
 		
 	}

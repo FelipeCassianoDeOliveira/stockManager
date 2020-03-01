@@ -1,15 +1,35 @@
 @charset "ISO-8859-1";
 
-body{
-	font-family: fantasy;
-	background-color: #121212;
-}
+  body .d-flex{ margin-top: 30px;   }
 
-.card{
-	background-color: #F9AA33;
-	margin-top: 100px;
-}
+            /** area brand  */
+            .d-flex .card .area-container .area-brand{
+                width: 250px;
+                height: 500px;
+                margin-top: -31px;
+                margin-left: -1px;
+                border-radius: 3px 0px 0px 4px;
+            }
+            .d-flex .card .area-container .brand{
+                margin-top: 150px;
+            }
+            .d-flex .card .d-flex .p-2 i{
+                font-size: 55pt;
+            } /** end area brand  */
 
-.card .form-login{
-	padding-top: 20px;
-}
+            /** area form login  */
+            .d-flex .card .area-container .form-login{
+                margin-left: 60px;
+                margin-top: 65px;
+                height: 250px;
+            }
+            /** end are form login  */
+            footer{ margin-top: 0px;}
+
+
+            @media screen and (max-width:1360px){
+                body footer{
+                    margin-top: 50px;
+                }
+                
+            }

@@ -10,7 +10,8 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- check erro -->
+   
+  <!-- check  -->
   <error-page>
   	<exception-type>
   		br.com.login.exception.InvalidUserException
@@ -20,4 +21,13 @@
   	</location>
   </error-page>
   
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>
+  		/userErro.jsp
+  	</location>
+  
+  </error-page>
+  
+ 
 </web-app>

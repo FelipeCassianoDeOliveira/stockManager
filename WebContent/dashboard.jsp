@@ -53,7 +53,7 @@
 			<div class="text-dark p-2">
 				<small id="userName" name="userName">
 					<b><%=UserName %></b>
-					| <a class="text-white" href="index.jsp">sair</a>	
+					| <a class="text-white" href="signOut.jsp">sair</a>	
 				</small>
 			</div>
 		
