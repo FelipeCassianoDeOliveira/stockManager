@@ -37,7 +37,7 @@
                     </div><!-- end card title -->
 
                    <!--form sign up -->
-                   <form class="form-sign-up" action="register" method="post" name="formSignUp" id="formSignUp">
+                   <form class="form-sign-up" action="RegisterUser" method="post" name="formSignUp" id="formSignUp">
 
                        <!--  form-row first name and last name -->
                        <div class="form-row">

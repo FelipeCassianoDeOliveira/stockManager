@@ -13,12 +13,14 @@ public class ConectionFactory {
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
 			
 			System.out.println("Conectado");
 			
 			return DriverManager.getConnection(
-						"jdbc:mysql://127.0.0.1:3306/estoque","Gerente","TLS_AES_256_GCM_SHA384");
+						"jdbc:mysql://127.0.0.1:3306/estoque?userTimeZone"
+						+"=true&serverTimezone=UTC","root","admin/fc");
 			
 		} catch (ClassNotFoundException e) {
 			// TODO: handle exception
